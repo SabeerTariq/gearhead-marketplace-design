@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -51,6 +52,12 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				oneoffautos: {
+					blue: '#0A3D91',
+					red: '#EA384C',
+					darkgray: '#333333',
+					lightgray: '#F5F5F5',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
