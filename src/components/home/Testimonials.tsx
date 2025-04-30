@@ -56,9 +56,8 @@ const Testimonials = () => {
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg h-full flex flex-col relative pt-12">
-                    {/* Avatar - Positioned above the card */}
-                    <div className="absolute -top-10 left-1/2 transform -translate-x-1/2">
+                  <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg h-full flex flex-col">
+                    <div className="flex justify-center mb-4">
                       <Avatar className="h-20 w-20 border-4 border-oneoffautos-blue shadow-md">
                         <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
                         <AvatarFallback className="bg-oneoffautos-red text-white text-xl">
@@ -67,8 +66,8 @@ const Testimonials = () => {
                       </Avatar>
                     </div>
                     
-                    <div className="mb-4 text-5xl text-oneoffautos-blue">"</div>
-                    <p className="italic mb-6 flex-grow">{testimonial.quote}</p>
+                    <div className="mb-4 text-5xl text-oneoffautos-blue text-center">"</div>
+                    <p className="italic mb-6 flex-grow text-center">{testimonial.quote}</p>
                     <div className="text-center">
                       <p className="font-bold">{testimonial.name}</p>
                       <p className="text-sm text-gray-600">{testimonial.location} • {testimonial.type}</p>
