@@ -1,6 +1,6 @@
-
 import React, { useState } from "react";
 import { Upload, Info, CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const SellForm = () => {
   const [formData, setFormData] = useState({
